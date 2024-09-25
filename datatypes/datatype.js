@@ -1,0 +1,1 @@
+console.log(typeof typeof 10);  // String return typeof is string
