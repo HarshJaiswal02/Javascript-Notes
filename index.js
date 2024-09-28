@@ -1,5 +1,4 @@
 console.log("Hii from javascript");
-
 // const title = document.getElementsByClassName("title");
 // console.log(title);
 
