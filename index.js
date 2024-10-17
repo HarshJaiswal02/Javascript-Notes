@@ -12,3 +12,23 @@ console.log("Hii from javascript");
 // };
 // add(11, 3);
 
+let count = 0;
+const getData = function () {
+  console.log(`Getting the data ${count++}`);
+};
+
+const debounce = function (fn, delay) {
+  let timer;
+
+  return function () {
+    let context = this,
+      arg = arguments;
+    console.log(context);
+    console.log(arg);
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      fn.apply(context, arg);
+    }, delay);
+  };
+};
+const smartFunction = debounce(getData, 300);
